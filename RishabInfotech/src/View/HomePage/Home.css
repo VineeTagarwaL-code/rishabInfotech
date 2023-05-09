@@ -1,0 +1,15 @@
+.RishabIntro{
+   
+  
+    background-color: var(--main-blue);
+ 
+ 
+}
+
+.home>div{
+    margin-bottom: 20px;
+}
+
+.home{
+    overflow-y: scroll;
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto&display=swap');
+
+:root{
+  --main-font: 'Quicksand', sans-serif;
+  --sub-font:'Roboto', sans-serif;
+  --main-blue: #004C8E;
+}
+
+.App{
+ 
+ user-select: none;
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  h2{
+    font-size: 40px !important;
+  }
+}
+
+
+/* // Medium Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h2{
+    font-size: 40px !important;
+  }
+}
+
+/* 
+// Small Screens */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  h2{
+    font-size: 35px !important;
+  }
+ 
+}
+
+
+/* // Extra Small Screens */
+
+@media (min-width: 320px) and (max-width: 575px) {
+  
+      h2{
+        font-size: 20px !important;
+      }
+}
+
+/* // Mobile Phones and tablets  */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  
+}

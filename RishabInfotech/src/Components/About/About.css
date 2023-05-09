@@ -1,0 +1,294 @@
+
+.intro{
+
+    max-width: 1400px;
+    display: flex;
+    
+    justify-content: space-evenly;
+    flex-wrap:wrap ;
+}
+.IntroImg{
+    height: 300px;
+    
+}
+.Intro{
+    width: 65%;
+}
+
+.introText{
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 50px;
+    color: #0c3a63;
+    margin-bottom: 40px;
+}
+
+
+#Introbuttons{
+    display: flex;
+    justify-content: unset;
+}
+.IntroBtn {
+   
+    border: none;
+    background-color: #FFC632;
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+    border-radius: 20px;
+    font-family: var(--sub-font);
+    font-size: 20px;
+    position: relative; 
+    z-index: 1;/* add position relative to enable absolute positioning of pseudo-element */
+  }
+  
+  .IntroBtn::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   height: 100%;
+   width: 0;
+
+     border-radius: 20px;
+    background-color: var(--main-blue);
+    transition: width 0.3s ease-out; /* set transition to animate the top position of the pseudo-element */
+  }
+  
+  .IntroBtn:hover::before {
+  
+    width: 100%; /* change the top position of the pseudo-element on hover to reveal the background color animation */
+  }
+
+  .IntroBtn:hover{
+    color: white;
+    transition: 0.3s ease-out;
+  }
+
+@media (min-width: 1201px){
+    .IntroBtn{
+        margin-right: 40px ;
+    }
+}
+  
+@media (min-width: 992px) and (max-width: 1200px) {
+    .intro{
+        justify-content: unset;
+        margin-top: 5vh !important;
+      }
+      .Intro{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+      }
+    
+    
+      .introText{
+        margin-bottom: 30px !important;
+      
+      }
+      #Introbuttons{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 60% !important   ;
+        margin: auto;
+      
+      }
+    
+      .IntroBtn{
+        height: 50px;
+        width: 120px;
+        font-size: 15px;
+      
+        padding-inline: 15px;
+      }
+      .Logo{
+        margin: auto;
+      }
+      .IntroImg{
+        height: 190px;
+       
+      }
+
+ 
+}
+
+
+/* // Medium Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .intro{
+        justify-content: unset;
+        margin-top: 5vh !important;
+      }
+      .Intro{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+      }
+    
+    
+      .introText{
+        margin-bottom: 30px !important;
+      
+      }
+      #Introbuttons{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 60% !important   ;
+        margin: auto;
+      }
+    
+      .IntroBtn{
+        height: 50px;
+        width: 120px;
+        font-size: 15px;
+      
+        padding-inline: 15px;
+      }
+      .Logo{
+        margin: auto;
+      }
+      .IntroImg{
+        height: 190px;
+       
+      }
+
+}
+
+/* 
+// Small Screens */
+
+@media (min-width: 576px) and (max-width: 767px) {
+ 
+    .intro{
+        justify-content: unset;
+        margin-top: 5vh !important;
+      }
+      .Intro{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+      }
+    
+    
+      .introText{
+        margin-bottom: 30px !important;
+      
+      }
+      #Introbuttons{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 60% !important   ;
+        margin: auto;
+     
+      }
+    
+      .IntroBtn{
+        height: 50px;
+        width: 120px;
+        font-size: 15px;
+      
+        padding-inline: 15px;
+      }
+      .Logo{
+        margin: auto;
+      }
+      .IntroImg{
+        height: 190px;
+       
+      }
+
+ 
+}
+
+
+/* // Extra Small Screens */
+
+@media (min-width: 320px) and (max-width: 575px) {
+  
+ 
+    .intro{
+        justify-content: unset;
+        margin-top: 5vh !important;
+      }
+      .Intro{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+      }
+    
+    
+      .introText{
+        margin-bottom: 20px;
+      }
+      #Introbuttons{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+       
+      }
+    
+      .IntroBtn{
+        height: 50px;
+        width: 120px;
+        font-size: 15px;
+      
+        padding-inline: 15px;
+      }
+      .Logo{
+        margin: auto;
+      }
+      .IntroImg{
+        height: 150px;
+       
+      }
+}
+
+/* // Mobile Phones and tablets  */
+/* 
+@media (min-width: 320px) and (max-width: 767px) {
+    
+  .intro{
+    justify-content: unset;
+    margin-top: 5vh !important;
+  }
+  .Intro{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+
+  .introText{
+    margin-bottom: 20px;
+  }
+  #Introbuttons{
+    flex-direction: row;
+   
+    margin: auto;
+  }
+
+  .IntroBtn{
+    height: 50px;
+    width: 120px;
+    font-size: 15px;
+  
+    padding-inline: 15px;
+  }
+  .Logo{
+    margin: auto;
+  }
+  .IntroImg{
+    height: 150px;
+   
+  }
+  
+} */
