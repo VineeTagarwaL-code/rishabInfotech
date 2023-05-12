@@ -5,10 +5,23 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
 
     border-radius: 20px;
   
     max-width: 1400px;
+}
+
+.AboutUs{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+   height: 200px;
+
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .introInfo{
@@ -23,9 +36,16 @@
     text-align: start;
 }
 
+#aboutText{
+    font-family: var(--main-font);
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
 
 .MainName{
-    font-family: var(--main-font);
+    font-family: var(--sub-font);
     font-size: 80px;
     color: white;
     margin-bottom: 20px;
@@ -40,14 +60,20 @@
 
 .IntroAbout{
     font-size: 22px;
-    color: rgb(202, 202, 202);
-    font-family: var(--sub-font);
+    color: rgb(168, 168, 168);
+    font-family: var(--poppins);
     width: 90%;
  
 }
 
+#status{
+    font-size: 18px;
+    color: rgb(202, 202, 202);
+    font-family: var(--poppins);
+}
+
 .Name{
-    font-family: var(--sub-font);
+    font-family: var(--poppins);
     color: white;
     font-size: 30px;
     padding-left: 10px;

@@ -9,18 +9,18 @@ import './Home.css'
 export default function Home() {
   return (
     <div className="container-fluid p-0 m-0 home">
-      <Navbar/>
+      <Navbar />
       <div className='about container-fluid'>
-      <About/>
+        <About />
       </div>
       <div className='RishabIntro '>
-       <Intro/>
+        <Intro />
       </div>
 
-      <footer>
-        <Footer/>
-      </footer>
-    
+
+      <Footer />
+
+
     </div>
   )
 }

@@ -10,7 +10,7 @@ import { faPhone, faLocationDot, faEnvelope, faGlobe } from '@fortawesome/free-s
 export default function Footer() {
   return (
 
-    <footer className='container-lg  p-3 footer'>
+    <footer className='container-lg  footer'>
 
 
       <div className='FootRight'>
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
         <div className='r'>
           <FontAwesomeIcon icon={faPhone} style={{ color: "#ffffff", }} />
-          <p className='FooterCard'>8001501104/99322481286</p>
+          <p className='FooterCard'>8001501104 / 99322481286</p>
         </div>
         <div className='r'>
 

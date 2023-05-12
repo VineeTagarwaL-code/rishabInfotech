@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
   --main-font: 'Quicksand', sans-serif;
   --sub-font:'Roboto', sans-serif;
   --main-blue: #004C8E;
+  --poppins : 'Poppins', sans-serif;
 }
-
+.color-white{
+  color: white !important;
+}
 .App{
  
  user-select: none;
@@ -18,6 +22,14 @@
 
 }
 
+.basicCont{
+  display: flex;
+  flex-direction: column;
+  
+
+
+
+}
 
 
 

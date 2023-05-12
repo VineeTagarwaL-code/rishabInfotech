@@ -2,11 +2,12 @@
    
   
     background-color: var(--main-blue);
- 
+
  
 }
 
-.home>div{
+
+.about , .RishabIntro{
     margin-bottom: 20px;
 }
 

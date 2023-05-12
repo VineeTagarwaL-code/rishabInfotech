@@ -7,6 +7,7 @@
 
 .footer{
     display: flex;
+    margin-bottom: 0 !important;
     flex-direction: row;
  
     gap: 100px;
@@ -31,10 +32,12 @@
     font-size: 25px;
 
 }
+
 .makeText{
     color: #004C8E !important;
-    font-weight: bold;
+    font-weight: 900;
     cursor: pointer;
+    padding: 0;
     text-decoration: underline;
   
 }
@@ -86,8 +89,8 @@ li:hover{
   
     padding: 10px;
     justify-content: space-evenly;
-    height: 250px;
-    width:200px;
+    height: 200px;
+    width:fit-content;
    border-radius: 20px;
    background-color: var(--main-blue);
 }

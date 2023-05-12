@@ -1,6 +1,10 @@
 import './Navbar.css'
 import logo from '../../assets/logo.png'
+
+import { useNavigate } from 'react-router-dom';
+
 export default function Navbar() {
+    const navigate= useNavigate()
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-transparent p-0 ">
@@ -22,27 +26,37 @@ export default function Navbar() {
 
 
                             <li className="nav-item">
-                                <button className="nav-link nav-btn sub-btn" aria-current="page" href="#">Home</button>
+                                <button className="nav-link nav-btn sub-btn" onClick={()=>{
+                                    navigate("/home")
+                                }} aria-current="page" href="#">Home</button>
                             </li>
 
                             <li className="nav-item">
-                                <button className="nav-link nav-btn sub-btn" aria-current="page" href="#">About Us</button>
+                                <button className="nav-link nav-btn sub-btn" aria-current="page" href="#" onClick={()=>{
+                                    navigate("/about")
+                                }}>About Us</button>
                             </li>
 
 
                             <li className="nav-item">
-                                <button className="nav-link nav-btn sub-btn" aria-current="page" href="#">Support</button>
+                                <button className="nav-link nav-btn sub-btn" aria-current="page" href="#" onClick={()=>{
+                                    navigate("/contact")
+                                }}>Support</button>
                             </li>
 
 
                             <li className="nav-item">
-                                <button className="nav-link nav-btn main-btn px-4" aria-current="page" href="#">Pricing</button>
+                                <button className="nav-link nav-btn main-btn px-4" aria-current="page" href="#" onClick={()=>{
+                                    navigate("/pricing")
+                                }}>Pricing</button>
                             </li>
 
 
 
                             <li className="nav-item">
-                                <button className="nav-link nav-btn main-btn px-4" aria-current="page" href="#">Download</button>
+                                <button className="nav-link nav-btn main-btn px-4" aria-current="page" href="#" onClick={()=>{
+                                    navigate("/download")
+                                }}>Download</button>
                             </li>
                         </ul>
 
@@ -59,19 +73,39 @@ export default function Navbar() {
                 <div className="offcanvas-body">
                     <ul className='nav-off-links d-flex flex-column p-0'>
                         <li>
-                            <button  className='btn-offCan' aria-current="page" href="#">Home</button>
+                            <button  className='btn-offCan' aria-current="page" href="#"
+                            onClick={()=>{
+                                navigate("/home")
+                            }}
+                            >Home</button>
                         </li>
                         <li>
-                            <button className='btn-offCan' aria-current="page" href="#">About Us</button>
+                            <button className='btn-offCan' aria-current="page" href="#"
+                            onClick={()=>{
+                                navigate("/about")
+                            }}
+                            >About Us</button>
                         </li>
                         <li>
-                            <button  className='btn-offCan'aria-current="page" href="#">Support</button>
+                            <button  className='btn-offCan'aria-current="page" href="#"
+                            onClick={()=>{
+                                navigate("/contact")
+                            }}
+                            >Support</button>
                         </li>
                         <li>
-                            <button className='btn-offCan mainbtn px-4' aria-current="page" href="#">Pricing</button>
+                            <button className='btn-offCan mainbtn px-4' aria-current="page" href="#"
+                            onClick={()=>{
+                                navigate("/pricing")
+                            }}
+                            >Pricing</button>
                         </li>
                         <li>
-                            <button className='btn-offCan mainbtn px-3' aria-current="page" href="#">Download</button>
+                            <button className='btn-offCan mainbtn px-3' aria-current="page" href="#"
+                            onClick={()=>{
+                                navigate("/download")
+                            }}
+                            >Download</button>
                         </li>
                     </ul>
 
