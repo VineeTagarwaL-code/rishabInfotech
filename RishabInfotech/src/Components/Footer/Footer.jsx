@@ -24,8 +24,6 @@ export default function Footer() {
           <p className='makeText'>Contact Us</p>
         </div>
       </div>
-
-
       <div className='FootMiddle'>
         <div className='Socials'>
           <label className='footer-header'>Socials</label>
@@ -33,10 +31,6 @@ export default function Footer() {
             <li><FontAwesomeIcon icon={faPhone} style={{ color: "#004c8e", }} /></li>
             <li>     <FontAwesomeIcon icon={faEnvelope} style={{ color: "#004c8e", }} /></li>
             <li>          <FontAwesomeIcon icon={faGlobe} style={{ color: "#004c8e", }} /></li>
-
-
-
-
           </ul>
         </div>
         <div className='Links'>
@@ -49,7 +43,6 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-
       <div className='FootLeft'>
         <div className='r'>
           <FontAwesomeIcon icon={faLocationDot} style={{ color: "#ffffff", }} />
@@ -68,13 +61,7 @@ export default function Footer() {
           <FontAwesomeIcon icon={faGlobe} style={{ color: "#ffffff", }} />
           <p className='FooterCard'>rishabinfotech.com</p>
         </div>
-
-
       </div>
-
-
-
     </footer>
-
   )
 }

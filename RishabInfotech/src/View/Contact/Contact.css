@@ -1,10 +1,9 @@
 .map{
     width: 99vw;
     height: 60vh;
-    position: relative;
+    
     padding: 0;
     margin-inline: 0px ;
-    
 }
 
 form{
@@ -17,6 +16,7 @@ form{
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 50px;
+    
 
 }
 
@@ -24,13 +24,13 @@ form{
 
 
 #header{
-    margin: auto;
+   
     font-size: 40px;
     font-family: var(--main-font);
     font-weight: bold;
     color: var(--main-blue);
     text-decoration: underline;
-    margin-bottom: 0 !important;
+   
 }
 
 
@@ -43,18 +43,15 @@ form{
 
 
 @media (min-width: 576px) and (max-width: 767px) {
- 
-   
+
 
     .contact {
-        flex-direction: column;
-       
+        flex-direction: column; 
       }
-    
-  
-    
-   
-   
+      #header {
+        visibility: hidden;
+
+      }
   }
 
 /* // Extra Small Screens */
@@ -63,13 +60,11 @@ form{
 
     .contact {
         flex-direction: column;
-       
+
       }
-    
-  
-    
       #header {
-        margin-top: 90px;
+        visibility: hidden;
+
       }
 }
 

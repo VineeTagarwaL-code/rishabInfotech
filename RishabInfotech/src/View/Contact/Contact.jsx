@@ -57,7 +57,9 @@ export default function Contact() {
                 }
 
             </div>
-            <p id="header">Contact Us </p>
+            <div>
+            <p id="header" className="container d-flex justify-content-center">Contact Us </p>
+            </div>
             <div className="formCont m-0">
                 <Form />
             </div>
