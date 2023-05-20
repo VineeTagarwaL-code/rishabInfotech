@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 .collapse {
     flex-grow: 0;
     width: fit-content;
     margin-right: 25px;
-  
+
 }
 
 
 
 .navbar-nav {
- 
+
     padding-right: 20px;
 }
 
@@ -19,21 +20,18 @@
     margin-top: 10px;
 }
 
-.offcanvas{
-    
-    width: 20px;
-}
+
 
 .nav-btn {
 
-      border: 1px solid transparent;
+    border: 1px solid transparent;
     background-color: transparent;
     font-family: 'Poppins', sans-serif;
-    font-size:19px;
+    font-size: 19px;
     color: rgb(29, 29, 29);
     position: relative;
     margin-left: 60px;
-    
+
 }
 
 
@@ -45,102 +43,109 @@
     width: 0px;
     background-color: #004C8E;
     transition: width 0.3s ease-in-out;
-  }
-  
-  .sub-btn:hover:before {
+}
+
+.sub-btn:hover:before {
     width: 80%;
-  }
+}
 
 
 
-.sub-btn:hover{
-   color:#004C8E ;
-   transition: .1s ease-in-out
-
+.sub-btn:hover {
+    color: #004C8E;
+    transition: .1s ease-in-out
 }
 
 .main-btn {
     background-color: #004C8E;
-    position: relative; 
-    border-radius: 20px;
-    color: white ;
-}
-
-.main-btn:hover{
- 
-  border: 1px solid #004C8E;  
-  background-color: transparent;
-  color: #004C8E;
-  transition: 0.3s ease-in-out;
-}
-
-.offCan{
-     margin-bottom: 40px;
-}
-.btn-offCan{
-    border: none;
-    background-color: transparent;
-       
-    font-family: 'Poppins', sans-serif;
-    font-size:19px;
-    color: rgb(29, 29, 29);
     position: relative;
-   
-   margin-bottom: 40px;
-}
-
-
-.btn-offCan:hover{
-    transform: translateX(10px);
-    transition: .4s ease-in-out;
-     color: #004C8E;
-}
-
-.nav-off-links{
-    list-style: none;
-}
-
-.mainbtn{
-        background-color: #004C8E;
-    position: relative; 
     border-radius: 20px;
-    color: white ;
+    color: white;
 }
 
-.mainbtn:hover{
- 
-  border: 1px solid #004C8E;  
-  background-color: transparent;
-  color: #004C8E;
-  transition: 0.3s ease-in-out;
+.main-btn:hover {
+
+    border: 1px solid #004C8E;
+    background-color: transparent;
+    color: #004C8E;
+    transition: 0.3s ease-in-out;
 }
 
-p{
-    color: rgb(163, 163, 163);
+.offCan {
+    margin-bottom: 40px;
 }
 
+.offcanvas {
 
+    max-width: 70%;
+}
+
+.offcanvas-header {
+
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offCanImage {
+    height: 70px;
+}
+
+.offLi {
+
+    display: flex;
+
+    justify-content: start;
+
+    align-items: center;
+
+    margin-bottom: 0 !important;
+    padding: 20px 20px 20px 5px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+
+}
+
+.btn-offCan {
+    color: var(--main-blue);
+    margin-top: 3px;
+    text-align: center;
+    font-family: var(--sub-font);
+    font-size: 22px;
+
+}
+
+.offCanIcon {
+    width: 40px;
+
+}
+
+.offCanBottom {
+    font-family: var(--sub-font);
+    color: var(--main-blue);
+    font-size: 15px;
+}
 
 @media (min-width: 992px) and (max-width: 1200px) {
-    .nav-image{
+    .nav-image {
         height: 85px;
         margin-left: 10px;
         object-fit: contain;
     }
 
 
-    .nav-btn{
-        margin-left: 20px; 
-        font-size:15px;
+    .nav-btn {
+        margin-left: 20px;
+        font-size: 15px;
     }
-   
+
 }
 
 
 /* // Medium Screens */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .nav-image{
+    .nav-image {
         height: 85px;
         margin-left: 10px;
         object-fit: contain;
@@ -151,29 +156,27 @@ p{
 // Small Screens */
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .nav-image{
+    .nav-image {
         height: 80px;
         margin-left: 10px;
         object-fit: contain;
     }
-       
-   
+
+
 }
 
 
 /* // Extra Small Screens */
 
 @media (min-width: 320px) and (max-width: 575px) {
-    .nav-image{
+    .nav-image {
         height: 70px;
         margin-left: 0;
         object-fit: contain;
     }
-       
+
 }
 
 /* // Mobile Phones and tablets  */
 
-@media (min-width: 320px) and (max-width: 767px) {
-    
-}
+@media (min-width: 320px) and (max-width: 767px) {}

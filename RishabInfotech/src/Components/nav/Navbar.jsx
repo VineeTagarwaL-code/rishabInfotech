@@ -1,5 +1,7 @@
 import './Navbar.css'
 import logo from '../../assets/logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faHouse , faCircleInfo, faUser, faDollarSign, faDownload , faPhone} from '@fortawesome/free-solid-svg-icons'
 
 import { useNavigate } from 'react-router-dom';
 
@@ -66,52 +68,59 @@ export default function Navbar() {
 
 
             <div className="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                <div className="offcanvas-header">
-                    <img className='nav-image offCan' src={logo} />
+                <div className="offcanvas-header p-2">
+                    <img className='offCanImage' src={logo} />
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div className="offcanvas-body">
+                <div className="offcanvas-body p-0 mt-3">
+
                     <ul className='nav-off-links d-flex flex-column p-0'>
-                        <li>
-                            <button  className='btn-offCan' aria-current="page" href="#"
+                        <li className='offLi'>
+                        <FontAwesomeIcon className="offCanIcon" icon={faHouse} size="lg" />
+                            <button  className='btn-offCan btn' aria-current="page" href="#"
                             onClick={()=>{
                                 navigate("/home")
                             }}
                             >Home</button>
                         </li>
-                        <li>
-                            <button className='btn-offCan' aria-current="page" href="#"
+                        <li className='offLi'>
+                            <FontAwesomeIcon className="offCanIcon" icon={faCircleInfo} style={{color: "#004c8e",}}  size="lg" />
+                            <button className='btn-offCan btn' aria-current="page" href="#"
                             onClick={()=>{
                                 navigate("/about")
                             }}
                             >About Us</button>
                         </li>
-                        <li>
-                            <button  className='btn-offCan'aria-current="page" href="#"
+                        <li className='offLi'>
+                             <FontAwesomeIcon className="offCanIcon" icon={faUser} style={{color: "#004c8e",}}  size="lg" />
+                            <button  className='btn-offCan btn'aria-current="page" href="#"
                             onClick={()=>{
                                 navigate("/contact")
                             }}
                             >Support</button>
                         </li>
-                        <li>
-                            <button className='btn-offCan mainbtn px-4' aria-current="page" href="#"
+                        <li className='offLi'>
+                            <FontAwesomeIcon className="offCanIcon" icon={faDollarSign} style={{color: "#004c8e",}}  size="lg" />
+                            <button className='btn-offCan btn' aria-current="page" href="#"
                             onClick={()=>{
                                 navigate("/pricing")
                             }}
                             >Pricing</button>
                         </li>
-                        <li>
-                            <button className='btn-offCan mainbtn px-3' aria-current="page" href="#"
+                        <li className='offLi'> 
+                        <FontAwesomeIcon className="offCanIcon" icon={faDownload} style={{color: "#004c8e",}}  size="lg"  />
+                            <button className='btn-offCan btn' aria-current="page" href="#"
                             onClick={()=>{
                                 navigate("/download")
                             }}
                             >Download</button>
                         </li>
                     </ul>
+                
 
                 </div>
 
-                <p className='px-3 '>© Copyright under Rishab Infotech</p>
+                <span className=' offCanBottom'> <FontAwesomeIcon className="px-2"icon={faPhone} style={{color: "#004c8e",}}  size="xs"  />Contact us at <span style={{fontWeight:"bold"}}>8001501104</span></span>
             </div>
         </>
     )

@@ -32,6 +32,14 @@
 }
 
 
+.btn{
+  border: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+  padding: 0!important
+  ;
+}
+
 
 @media (min-width: 992px) and (max-width: 1200px) {
 

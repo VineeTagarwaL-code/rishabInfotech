@@ -1,8 +1,75 @@
-
-
-
-
-.formCont{
-    background-color:rgba(0,76,142,.9);
+.map{
+    width: 99vw;
+    height: 60vh;
+    position: relative;
+    padding: 0;
+    margin-inline: 0px ;
     
 }
+
+form{
+    height: 100%;
+}
+
+.contact{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+
+}
+
+
+
+
+#header{
+    margin: auto;
+    font-size: 40px;
+    font-family: var(--main-font);
+    font-weight: bold;
+    color: var(--main-blue);
+    text-decoration: underline;
+    margin-bottom: 0 !important;
+}
+
+
+.loader{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+ 
+   
+
+    .contact {
+        flex-direction: column;
+       
+      }
+    
+  
+    
+   
+   
+  }
+
+/* // Extra Small Screens */
+
+@media (min-width: 320px) and (max-width: 575px) {
+
+    .contact {
+        flex-direction: column;
+       
+      }
+    
+  
+    
+      #header {
+        margin-top: 90px;
+      }
+}
+

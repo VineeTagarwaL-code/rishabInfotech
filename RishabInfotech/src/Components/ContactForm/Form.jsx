@@ -29,10 +29,10 @@ export default function Form() {
   const [messageSent, setIsMessageSent] = useState(false)
   //funcitons to validate input values and update my state
 
-  const CheckValidName = (e) => {
+  const CheckValidName = (name) => {
     const regex = /^.{5,30}$/
-    if (regex.test(e.target.value)) {
-      setName(e.target.value)
+    if (regex.test(name)) {
+      setName(name)
       setIsNameError(false)
 
     } else {
@@ -46,11 +46,11 @@ export default function Form() {
     }
   }
 
-  const CheckValidEmail = (e) => {
+  const CheckValidEmail = (email) => {
 
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (regex.test(e.target.value)) {
-      setEmail(e.target.value)
+    if (regex.test(email)) {
+      setEmail(email)
       setIsEmailError(false)
     } else {
       setIsEmailError(true)
@@ -63,11 +63,11 @@ export default function Form() {
     }
   }
 
-  const CheckValidMob = (e) => {
+  const CheckValidMob = (mob) => {
 
     const regex = /^[0-9]{10}$/;
-    if (regex.test(e.target.value)) {
-      setMobile(e.target.value)
+    if (regex.test(mob)) {
+      setMobile(mob)
       setIsMobileError(false)
     } else {
       setIsMobileError(true)
@@ -85,8 +85,18 @@ export default function Form() {
     setEmail("")
     setMobile("")
   }
+
+  const Validate = ()=>
+  {
+    CheckValidEmail(email)
+    CheckValidName(name)
+    CheckValidMob(mobile)
+
+  }
   const handleSubmit = (e) => {
     e.preventDefault()
+
+    Validate();
 
     setIsMessageSent(true)
 
@@ -96,7 +106,7 @@ export default function Form() {
     clearAllValues()
   }
   return (
-    <div className='container form py-3 my-5'>
+    <div className='container form pb-3 mb-5'>
 
 
       <div className='formRight p-3'>
@@ -150,7 +160,7 @@ export default function Form() {
             id="name"
             name="name"
             required
-            onChange={(e) => CheckValidName(e)}
+            onChange={(e) => setName(e.target.value)}
           />
           {
             nameError ? <p className='error'>Should Be Between 5-20 Chars</p> : null
@@ -163,7 +173,7 @@ export default function Form() {
             id="email"
             name="email"
             required
-            onChange={(e) => CheckValidEmail(e)}
+            onChange={(e) => setEmail(e.target.value)}
           />
           {
             emailError ? <p className='error'>Enter A Valid Email</p> : null
@@ -176,7 +186,7 @@ export default function Form() {
             id="mobile"
             name="mobile"
             required
-            onChange={(e) => CheckValidMob(e)}
+            onChange={(e) => setMobile(e.target.value)}
           />
           {
             mobileError ? <p className='error'>Enter A Valid Phone No.</p> : null
