@@ -1,16 +1,46 @@
 .RishabIntro{
-   
-  
+
     background-color: var(--main-blue);
 
- 
 }
 
 
 .about , .RishabIntro{
     margin-bottom: 20px;
+    overflow: hidden;
 }
-
+.RishabIntro{
+    display: flex;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+   
+    overflow: hidden;
+}
 .home{
+    overflow-x: hidden;
+    padding: 0 !important;
+    margin: 0;
     overflow-y: scroll;
 }
+
+
+
+.blob1{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    right: 0;
+    bottom: -300px !important;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+.RishabIntro{
+        border-top-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+       
+    }
+
+    .blob1{
+        display: none;
+    }
+    
+    }

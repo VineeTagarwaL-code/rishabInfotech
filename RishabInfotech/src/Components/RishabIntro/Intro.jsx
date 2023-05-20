@@ -1,35 +1,37 @@
 import './intro.css'
 import pic from '../../assets/pic2.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHandshakeAngle, faGear, faDoorOpen, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
+
 
 export default function Intro() {
   return (
-    <div className='container p-3 pt-5 pb-5 introCont'>
-      <div className='AboutUs'>
-         <h3 id='aboutText'>About Us</h3>
-      </div>
-
-      <div className='intro'>
-        <div className='introInfo'>
-
-          <h1 className='MainName'>Rishab Infotech</h1>
-
-          <h2 className='IntroAbout'>
-            We are a Tally Solutions Certified Partner with
-            over a decade of experience in selling and implementing Tally software.
-            Our team provides IT consultancy and services to various sectors and helps
-            businesses improve processes with the latest software tools and technologies.
-            We are a premier software solutions provider in Durgapur and surrounding
-            districts.
-          </h2>
-        </div>
-        <div className='picCont'>
-          <img src={pic} className='pic' />
-          <h5 className='Name'> Rupesh Agarwal</h5>
-          <h6 id='status'>Owner</h6>
+    <div className='container  p-3 pt-4 introCont'>
+      <div className='introLeft'>
+        <h2 id="head">Who Are We?</h2>
+        <div className='Cont1'>
+          <h4 id='info'>We are a certified partner of Tally Solutions Pvt. Ltd., having been associated with them since 2008. With extensive experience in selling and implementing Tally software applications, we are proud to be a premier software solutions provider in Durgapur and neighboring districts. Our dedicated team excels in IT consultancy and services, catering to a wide range of industries including Manufacturing, Distribution, and Transport. By leveraging the latest software tools and technologies, we help businesses enhance their processes and gain a competitive edge. With a strong focus on customer satisfaction, we continuously improve our software engineering and delivery processes, making us the preferred partner in the business application software services domain.</h4>
+          <div className='introLeftBt'>
+            <FontAwesomeIcon style={{ color: "rgb(247, 247, 129)", marginRight: "10px" }} size="xl" icon={faQuoteLeft} />
+            <span className='qoute'>We Grow With You</span>
+            <FontAwesomeIcon style={{ color: "rgb(247, 247, 129)", marginLeft: "10px" }} size="xl" icon={faQuoteRight} />
+          </div>
         </div>
       </div>
-
-
+      <div className='introRight pt-3'>
+        <div className='cardIntro'>
+          <FontAwesomeIcon icon={faHandshakeAngle} size="4x" style={{ color: "#004c8e" }} />
+          <h5>We Provide 24/7 Support , Ready to help you and your team to overcome obstacles </h5>
+        </div>
+        <div className='cardIntro'>
+          <FontAwesomeIcon icon={faGear} size="4x" style={{ color: "#004c8e" }} />
+          <h5>We Provide Excellent Techinal Support On a Wide Variety of Electrical Products</h5>
+        </div>
+        <div className='cardIntro'>
+          <FontAwesomeIcon icon={faDoorOpen} size="4x" style={{ color: "#004c8e" }} />
+          <h5>We Provide Doorstep Service for any assistance You Need </h5>
+        </div>
+      </div>
     </div>
   )
 }
