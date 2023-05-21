@@ -9,7 +9,7 @@ export default function Navbar() {
     const navigate= useNavigate()
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-transparent p-0 ">
+            <nav className="navbar sticky-top navbar-expand-lg bg-transparent p-0 ">
                 <div className="container-fluid d-flex flex-row justify-content-between ">
                     <a className="navbar-brand" href="#">
                         <img className='nav-image' src={logo} />

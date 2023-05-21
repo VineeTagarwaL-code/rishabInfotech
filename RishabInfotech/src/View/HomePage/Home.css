@@ -1,22 +1,26 @@
-.RishabIntro{
+.RishabIntro {
 
     background-color: var(--main-blue);
 
 }
 
 
-.about , .RishabIntro{
+.about,
+.RishabIntro {
     margin-bottom: 20px;
     overflow: hidden;
 }
-.RishabIntro{
+
+.RishabIntro {
+
     display: flex;
-    border-top-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-   
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    position: relative;
     overflow: hidden;
 }
-.home{
+
+.home {
     overflow-x: hidden;
     padding: 0 !important;
     margin: 0;
@@ -25,22 +29,93 @@
 
 
 
-.blob1{
+.blob1 {
     position: absolute;
-    height: 350px;
+    height: 250px;
     width: 350px;
-    right: 0;
-    bottom: -300px !important;
+    right: -40px;
+    bottom: -10px !important;
 }
-@media (min-width: 320px) and (max-width: 575px) {
-.RishabIntro{
+
+#icon {
+
+    height: 350px;
+    position: absolute;
+    opacity: 0.6;
+    left: -120px;
+    top: 190px;
+    color: #024178;
+
+}
+
+
+@media (min-width: 1201px){
+
+}
+  
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+ 
+}
+
+
+/* // Medium Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    
+
+}
+
+/* 
+// Small Screens */
+
+@media (min-width: 576px) and (max-width: 767px) {
+ 
+    .RishabIntro {
         border-top-left-radius: 0%;
         border-bottom-right-radius: 0%;
-       
+
     }
 
-    .blob1{
-        display: none;
+    .blob1 {
+    display: none;
     }
-    
+
+    #icon {
+        height: 150px;
+        top: 10px;
+        left: -40px;
+        opacity: 0.4;
     }
+ 
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .RishabIntro {
+        border-top-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+
+    }
+
+    .blob1 {
+       display: none;
+    }
+
+    #icon {
+        height: 150px;
+        top: 10px;
+        left: -40px;
+        opacity: 0.4;
+    }
+}
