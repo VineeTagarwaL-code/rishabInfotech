@@ -35,30 +35,34 @@
     cursor: pointer;
     height: 50px;
     width: 180px;
+    color: rgb(0, 0, 111);
     border-radius: 20px;
     font-family: var(--sub-font);
     font-size: 20px;
     position: relative; 
+    overflow: hidden;
     z-index: 1;/* add position relative to enable absolute positioning of pseudo-element */
   }
   
   .IntroBtn::before {
-    z-index: -1;
+
     content: "";
     position: absolute;
-    bottom: 0;
     left: 0;
-   height: 100%;
-   width: 0;
-
-     border-radius: 20px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    z-index:-1;
+    border-radius: 20px;
     background-color: var(--main-blue);
-    transition: width 0.3s ease-out; /* set transition to animate the top position of the pseudo-element */
   }
   
   .IntroBtn:hover::before {
   
-    width: 100%; /* change the top position of the pseudo-element on hover to reveal the background color animation */
+    transform: scaleX(1); /* change the top position of the pseudo-element on hover to reveal the background color animation */
   }
 
   .IntroBtn:hover{

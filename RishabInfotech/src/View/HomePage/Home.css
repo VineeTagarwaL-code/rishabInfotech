@@ -37,6 +37,13 @@
     bottom: -10px !important;
 }
 
+.blob2{
+    position: absolute;
+    height: 250px;
+    width: 350px;
+    left: -40px;
+    top: -10px !important;
+}
 #icon {
 
     height: 350px;
@@ -47,7 +54,19 @@
     color: #024178;
 
 }
+.service{
+    position: relative;
 
+}
+#iconService{
+    height: 350px;
+    position: absolute;
+    opacity: 0.2;
+    right: -20px;
+    transform: rotateX(60);
+bottom: 190px;
+    color: #004C8E;
+}
 
 @media (min-width: 1201px){
 

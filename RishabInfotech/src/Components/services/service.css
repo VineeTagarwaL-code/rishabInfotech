@@ -1,0 +1,64 @@
+/* main container */
+.serviceCont{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* services container  */
+
+/*  */
+
+/* first card css */
+
+.cardS{
+
+  cursor: pointer;
+    display: flex;
+    border-bottom: 5px solid var(--main-blue);
+padding-bottom: 50px;
+border-radius: 50%;
+padding-top: 50px;
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+.rightR{
+    width: 60%;
+    border-radius: 20px ;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top:20px;
+    background-color: var(--main-blue);
+}
+
+.numbers{
+    font-size: 100px;
+    font-family: var(--main-font);
+    filter: drop-shadow(2px 0px 0px #545454);
+    color: #FFC632 ;
+
+}
+
+.cardHead , .cardInfo{
+    color: white;
+}
+
+.cardHead{
+    font-family: var(--poppins);
+    letter-spacing: 1px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.cardInfo{
+    font-family: var(--sub-font);
+    color: rgb(245, 245, 245);
+    font-size: 25px;
+}
+
+.even{
+    
+    flex-direction: row-reverse;
+}

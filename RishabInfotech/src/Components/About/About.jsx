@@ -11,6 +11,7 @@ export default function About() {
           <button className='IntroBtn' onClick={()=>{
                                     navigate("/pricing")
                                 }}>Pricing</button>
+
           <button  className='IntroBtn' 
           onClick={()=>{
             navigate("/download")

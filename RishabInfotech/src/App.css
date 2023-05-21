@@ -34,7 +34,9 @@
 
 }
 
-
+.main-color{
+  color: var(--main-blue) !important;
+}
 .btn{
   border: none !important;
   background-color: transparent !important;

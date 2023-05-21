@@ -1,16 +1,21 @@
+/* container */
+
+.introCont {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* main container for the content */
 #top {
     display: flex;
     justify-content: space-between;
     z-index: 2;
     gap: 30px;
+
 }
 
-
-.introCont{
-    display: flex;
-    flex-direction: column;
-   
-}
+/* right side css */
 .introLeft {
 
     width: 55%;
@@ -20,9 +25,8 @@
 
 }
 
-#head {
+.head {
     color: #FFC632;
-   
     border-radius: 2px;
     width: fit-content;
     font-family: var(--main-font);
@@ -41,7 +45,8 @@
 
 .Cont1 {
 
-    height: 100%; display: flex;
+    height: 100%;
+    display: flex;
     flex-direction: column;
 
 
@@ -51,7 +56,6 @@
     color: white;
     font-size: 25px;
     align-self: center;
-  
     color: rgb(247, 247, 129);
     font-family: var(--main-font);
 }
@@ -59,13 +63,40 @@
 .introLeftBt {
     margin: auto;
     width: fit-content;
-    
 }
+
+
+.head,
+#info {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+/* left side css */
+
 
 .introRight {
 
-   justify-content: center;
-   gap: 10px;
+    justify-content: center;
+    gap: 10px;
     display: flex;
     flex-direction: column;
 
@@ -76,7 +107,6 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 15px;
-  
     cursor: pointer;
     height: 90px;
     width: 550px;
@@ -87,41 +117,25 @@
     animation: cardIntroAnimation 0.5s ease-in-out forwards;
     background-color: rgb(239, 239, 239);
 }
-.cardIntro:hover{
-   border: 1px solid transparent; 
-}
-.profile{
-    height: 200px;
+
+.cardIntro:hover {
+    border: 1px solid transparent;
 }
 
-#bottom{
-   
-    width: fit-content;
-    align-self:center ;
-    
-}
-h5{
+
+
+
+
+h5 {
     color: var(--main-blue);
     font-size: 17px;
 }
 
-#head,#info{
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+
+.introIcon {
+    height: 30px;
 }
 
-
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateX(-10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
 
 
 @keyframes cardIntroAnimation {
@@ -148,122 +162,154 @@ h5{
     animation-delay: 0.9s;
 }
 
-@media (min-width: 1201px){
+/* media queries for responsiveness */
 
-}
-  
 @media (min-width: 992px) and (max-width: 1200px) {
 
-    #top{
+    #top {
         flex-direction: column;
     }
-    .introLeftBt,.introLeft,.introRight{
+
+    .introLeftBt,
+    .introLeft,
+    .introRight {
         width: 100%;
     }
-    #head{
+
+    #head {
         font-size: 60px !important;
     }
-    #info{
+
+    #info {
         font-size: 18px;
     }
-    .qoute{
-       margin: auto;
+
+    .qoute {
+        margin: auto;
         font-size: 20px;
     }
-    h5{
+
+    h5 {
         font-size: 16px;
     }
-    .cardIntro{
+
+    .cardIntro {
         width: 350px;
     }
-    
- 
+
 }
 
 
 /* // Medium Screens */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    #top{
+    #top {
         flex-direction: column;
     }
-    .introLeftBt,.introLeft,.introRight{
+
+    .introLeftBt,
+    .introLeft,
+    .introRight {
         width: 100%;
     }
-    #head{
+
+    .head {
         font-size: 60px !important;
     }
-    #info{
+
+    #info {
         font-size: 18px;
     }
-    .qoute{
-       margin: auto;
+
+    .qoute {
+        margin: auto;
         font-size: 20px;
     }
-    h5{
+
+    h5 {
         font-size: 16px;
     }
-    .cardIntro{
+
+    .cardIntro {
         width: 350px;
     }
-    
 
 }
 
-/* 
+/*
 // Small Screens */
 
 @media (min-width: 576px) and (max-width: 767px) {
-    #top{
+    #top {
         flex-direction: column;
     }
-    .introLeftBt,.introLeft,.introRight{
+
+    .introLeftBt,
+    .introLeft,
+    .introRight {
         width: 100%;
     }
-    #head{
+
+    .head {
         font-size: 60px !important;
     }
-    #info{
+
+    #info {
         font-size: 18px;
     }
-    .qoute{
-       margin: auto;
+
+    .qoute {
+        margin: auto;
         font-size: 20px;
     }
-    h5{
+
+    h5 {
         font-size: 16px;
     }
-    .cardIntro{
-        width: 350px;
+
+    .cardIntro {
+        width: fit-content;
     }
 
- 
+
 }
 
 
 /* // Extra Small Screens */
 
 @media (min-width: 320px) and (max-width: 575px) {
-#top{
-    flex-direction: column;
-}
-.introLeftBt,.introLeft,.introRight{
-    width: 100%;
-}
-#head{
-    font-size: 50px !important;
-}
-#info{
-    font-size: 16px;
-}
-.qoute{
-   margin: auto;
-    font-size: 15px;
-}
-h5{
-    font-size: 15px;
-}
-.cardIntro{
-    width: 350px;
-}
+    #top {
+        flex-direction: column;
+    }
+
+    .introLeftBt,
+    .introLeft,
+    .introRight {
+        width: 100%;
+    }
+
+    .head {
+        font-size: 50px !important;
+    }
+
+    #info {
+        font-size: 16px;
+    }
+
+    .qoute {
+        margin: auto;
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    .cardIntro {
+        width: fit-content;
+    }
+
+    .introIcon {
+        height: 20px;
+    }
 }
