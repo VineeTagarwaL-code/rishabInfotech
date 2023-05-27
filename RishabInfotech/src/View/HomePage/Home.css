@@ -30,6 +30,7 @@
 
 
 .blob1 {
+    z-index: -1;
     position: absolute;
     height: 250px;
     width: 350px;
@@ -42,6 +43,7 @@
     height: 250px;
     width: 350px;
     left: -40px;
+    z-index: -1;
     top: -10px !important;
 }
 #icon {
@@ -59,13 +61,22 @@
 
 }
 #iconService{
+    z-index: -1;
     height: 350px;
     position: absolute;
     opacity: 0.2;
     right: -20px;
     transform: rotateX(60);
-bottom: 190px;
+bottom: 490px;
     color: #004C8E;
+}
+.blob3{
+   z-index: -1;
+    position: absolute;
+    height: 250px;
+    width: 350px;
+    left: -40px;
+    bottom: 0px !important;
 }
 
 @media (min-width: 1201px){
@@ -136,5 +147,10 @@ bottom: 190px;
         top: 10px;
         left: -40px;
         opacity: 0.4;
+    }
+
+    #iconService{
+        height: 300px;
+        margin: auto;
     }
 }

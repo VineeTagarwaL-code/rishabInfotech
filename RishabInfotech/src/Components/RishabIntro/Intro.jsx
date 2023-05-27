@@ -1,7 +1,7 @@
 import './intro.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHandshakeAngle, faGear, faDoorOpen, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
+import { faHandshakeAngle, faGear, faDoorOpen,faCircleDown, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Intro() {
@@ -20,6 +20,7 @@ export default function Intro() {
           </div>
         </div>
         <div className='introRight pt-3'>
+         
           <div className='cardIntro'>
             <FontAwesomeIcon icon={faHandshakeAngle} className="introIcon" style={{ color: "#004c8e" }} />
             <h5>We Provide 24/7 Support , Ready to help you and your team to overcome obstacles </h5>
@@ -32,7 +33,9 @@ export default function Intro() {
             <FontAwesomeIcon icon={faDoorOpen} className="introIcon" style={{ color: "#004c8e" }} />
             <h5>We Provide Doorstep Service for any assistance You Need With Your Bussiness </h5>
           </div>
+         
         </div>
+     
       </div>
 
     

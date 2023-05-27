@@ -96,6 +96,7 @@
 .introRight {
 
     justify-content: center;
+      
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -124,7 +125,24 @@
 
 
 
+.downIcon{
+    color:#FFC632 ;
+    height: 40px;
 
+}
+.knowmore{
+ cursor: pointer;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+#knowmore{
+    font-family: var(--sub-font);
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
 
 h5 {
     color: var(--main-blue);

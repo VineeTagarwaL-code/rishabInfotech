@@ -1,64 +1,193 @@
 /* main container */
-.serviceCont{
+.serviceCont {
     display: flex;
     flex-direction: column;
 
+  gap: 10px;
 }
-
+/* .services{
+    border: 1px solid red;
+} */
 /* services container  */
 
 /*  */
 
 /* first card css */
+.odd{
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+.even{
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
 
-.cardS{
+.fadeIn , .odd{
+    opacity: 1;
+    transform: translateX(10px);
+}
+.fadeIn , .even{
+    opacity: 1;
+    position: relative;
+    transform: translateX(-10px);
+}
+.cardS {
+    
 
-  cursor: pointer;
+    cursor: pointer;
     display: flex;
     border-bottom: 5px solid var(--main-blue);
-padding-bottom: 50px;
-border-radius: 50%;
-padding-top: 50px;
-    
+    padding-bottom: 50px;
+    border-radius: 50%;
+    padding-top: 50px;
+   
+
     justify-content: space-between;
     align-items: center;
 
 }
-.rightR{
+
+.cardS:hover{
+   
+    transform: translateY(20px);
+}
+
+.rightR {
     width: 60%;
-    border-radius: 20px ;
+    border-radius: 20px;
     padding: 10px;
     padding-bottom: 20px;
-    padding-top:20px;
+    padding-top: 20px;
     background-color: var(--main-blue);
 }
 
-.numbers{
+.numbers {
+   
+    transition: opacity .8s ease;
     font-size: 100px;
-    font-family: var(--main-font);
+    font-family: var(--sub-font);
+    
     filter: drop-shadow(2px 0px 0px #545454);
-    color: #FFC632 ;
+    color: var(--main-blue);
 
 }
 
-.cardHead , .cardInfo{
+.cardHead,
+.cardInfo {
     color: white;
 }
 
-.cardHead{
+.cardHead {
     font-family: var(--poppins);
     letter-spacing: 1px;
     font-size: 35px;
+    color: #FFC632;
     margin-bottom: 20px;
 }
 
-.cardInfo{
+.cardInfo {
     font-family: var(--sub-font);
-    color: rgb(245, 245, 245);
-    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: lighter;
 }
 
-.even{
-    
+.even {
+
     flex-direction: row-reverse;
+}
+
+#ServiceHead {
+    margin: auto;
+}
+
+#subHeadS{
+    font-family: var(--main-font);
+    color: var(--main-blue);
+    font-weight: bold;
+}
+#btHead{
+    font-size: 40px;
+    text-align: center;
+}
+
+.bottomCont{
+    
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:60px;
+    align-items: center;
+
+}
+#Introbuttons{
+   margin-top: 20px;
+    
+}
+
+#btHead{
+    color: var(--main-blue);
+}
+
+@media (min-width: 1201px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+
+/* // Medium Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* 
+// Small Screens */
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .head1{
+        margin-bottom: 5px !important;
+       font-size: 54px !important;
+   }
+
+   .cardHead{
+       font-size: 25px;
+   }
+   .numbers{
+       font-size: 90px;
+   }
+   .cardInfo{
+       font-size: 17px;
+   }
+   #Introbuttons{
+   
+    width: 100%;
+}
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .head1{
+         margin-bottom: 5px !important;
+        font-size: 39px !important;
+    }
+
+    .cardHead{
+        font-size: 20px;
+    }
+    .numbers{
+        font-size: 80px;
+    }
+    .cardInfo{
+        font-size: 15px;
+    }
+    #btHead{
+        font-size: 20px;
+    }
+    #Introbuttons{
+      
+        width: 100%;
+    }
 }
